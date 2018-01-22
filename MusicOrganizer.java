@@ -187,6 +187,15 @@ public class MusicOrganizer
             }
         }
     }
+    
+    public void fijarGeneroMusical(int indice, String genero)
+    {
+        if(indice >= 0 && indice < tracks. size()){
+            tracks.get(indice).setGeneroMusical(genero);
+        }
+        
+    }
+        
         
     
 }

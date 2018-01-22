@@ -16,6 +16,8 @@ public class Track
     
     private int playCount;
     
+    private String generoMusical;
+    
     /**
      * Constructor for objects of class Track.
      * @param artist The track's artist.
@@ -26,6 +28,7 @@ public class Track
     {
         setDetails(artist, title, filename);
         playCount = 0;
+        generoMusical = "";
     }
     
     /**
@@ -38,6 +41,7 @@ public class Track
     {
         setDetails("unknown", "unknown", filename);
         playCount = 0;
+        generoMusical = "";
     }
     
     /**
@@ -73,7 +77,7 @@ public class Track
      */
     public String getDetails()
     {
-        return artist + ": " + title + "  (file: " + filename + ")" + " Numero de reproducciones :" + playCount;
+        return artist + ": " + title + "  (file: " + filename + ")" + " Genero Musical: " + generoMusical  + " - Numero de reproducciones :" + playCount;
     }
     
     /**
@@ -102,6 +106,16 @@ public class Track
     public int getPlayCount()
     {
         return playCount;
+    }
+    
+    public String getGeneroMusical()
+    {
+        return generoMusical;
+    }
+    
+    public void setGeneroMusical(String genero)
+    {
+        generoMusical = genero;
     }
     
 }
