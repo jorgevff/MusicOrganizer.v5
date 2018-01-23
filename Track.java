@@ -77,7 +77,7 @@ public class Track
      */
     public String getDetails()
     {
-        return artist + ": " + title + "  (file: " + filename + ")" + " Genero Musical: " + generoMusical  + " - Numero de reproducciones :" + playCount;
+        return artist + ": " + title + "  (file: " + filename + ")" + " Genero Musical: " + generoMusical  + " - Numero de reproducciones: " + playCount;
     }
     
     /**
